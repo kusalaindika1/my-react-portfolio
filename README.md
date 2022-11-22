@@ -71,4 +71,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 # Github repository link
 
+https://github.com/kusalaindika1/my-react-portfolio
+
 # screen image
+
+![](img/re.PNG)
+![](img/re2.PNG)
