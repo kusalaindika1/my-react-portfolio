@@ -7,7 +7,7 @@ const Resume = () => {
         <h1>
           Liyanage <span>Kusal</span>
         </h1>
-        <h3>Web Developre</h3>
+        <h3>WEB DEVELOPER</h3>
         <div className="resume__myInfor_details">
           <p>Toronto, Canada</p>
           <p>
@@ -81,7 +81,7 @@ const Resume = () => {
 
         <ul>
           <li>
-            Worked as a productive and positive team menber to design, code,
+            Worked as a productive and positive team member to design, code,
             test, report, and debug operations.
           </li>
 

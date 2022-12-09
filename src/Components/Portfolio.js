@@ -5,8 +5,8 @@ const Portfolio = () => {
   const portfolioUnitGenArray = [
     {
       img: "",
-      title: "NoSql Social Network",
-      github: "https://github.com/kusalaindika1/my-social-network-nosql-api",
+      title: "group project",
+      github: "https://github.com/Rankin47/Project-3",
     },
     {
       img: "",
