@@ -5,7 +5,7 @@ const Portfolio = () => {
   const portfolioUnitGenArray = [
     {
       img: "",
-      title: "group project",
+      title: "mysterious-woodland",
       github: "https://github.com/Rankin47/Project-3",
     },
     {
