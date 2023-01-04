@@ -1,7 +1,11 @@
 const Footer = () => {
   return (
     <footer className="social_link">
-      <a href="https://github.com/indikusal" target="_blank" rel="noreferrer">
+      <a
+        href="https://github.com/kusalaindika1"
+        target="_blank"
+        rel="noreferrer"
+      >
         <img src="/image/github-svgrepo-com.svg" alt="github" />
       </a>
 
@@ -16,11 +20,11 @@ const Footer = () => {
       <a
         href="https://www.linkedin.com/in/ethugalge-liyanage-06b872256/"
         target="_blank"
-        rel="linkedin profile"
+        rel="noreferrer"
       >
         <img src="/image/linkedin-svgrepo-com.svg" alt="linkedin" />
       </a>
-      <a href="mailto: kusala123@yahoo.ca" target="_blank" rel="noreferrer">
+      <a href="mailto: mycanada345@gmail.com" target="_blank" rel="noreferrer">
         <img src="/image/email-svgrepo-com.svg" alt="E-mail" />
       </a>
     </footer>

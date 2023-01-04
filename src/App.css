@@ -379,12 +379,21 @@ a {
 .resume__keySkills h2,
 .resume__achievements h2,
 .resume__certifications h2,
-.resume__workExperience h2 {
+.resume__workExperience h2,
+.resume__projects h2 {
   width: 100%;
   padding-bottom: 12px;
   margin-bottom: 20px;
   border-bottom: 2px solid var(--main-color);
   font-weight: bold;
+}
+
+.resume__projects__block {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
 }
 
 .resume__keySkills p {
@@ -425,9 +434,22 @@ a {
 
 .resume__achievements,
 .resume__certifications,
-.resume__workExperience {
+.resume__workExperience,
+.resume__projects {
   margin-top: 50px;
   width: 100%;
+}
+
+.resume__certifications h3,
+.resume__certifications h4,
+.resume__certifications ul {
+  margin-bottom: 17px;
+}
+.resume__certifications ul li {
+  list-style: disc;
+}
+.resume__certifications ul {
+  margin-left: 50px;
 }
 
 .resume__achievements p {
@@ -447,6 +469,19 @@ a {
 .resume__workExperience ul li {
   list-style: disc;
   margin-bottom: 12px;
+}
+.resumeProject__container {
+  width: 100%;
+  cursor: pointer;
+  padding: 7px;
+  transition: all 400ms ease-in;
+}
+.resumeProject__container p {
+  width: 100%;
+  text-align: justify;
+}
+.resumeProject__container:hover {
+  background-color: #e3b18a;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -539,5 +574,8 @@ a {
   .resume__myInfor_details p,
   a {
     font-weight: 500;
+  }
+  .resume__projects__block {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

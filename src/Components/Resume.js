@@ -1,6 +1,33 @@
 import Footer from "./Footer";
+import ResumeProject from "./ResumeProject/ResumeProject";
 
 const Resume = () => {
+  const projetDetails = [
+    {
+      title: "TECH-BLOG",
+      description:
+        "This Model-View-Controller (MVC) Tech Blog application allows users to create an account and post blog posts. Users can also edit and delete their own posts. It also allows them to comment on posts from other users.",
+      link: "https://github.com/kusalaindika1/my-tech-blog",
+    },
+    {
+      title: "BOOK-SEARCH-ENGINE",
+      description:
+        "This Google Books API search engine application was originally built using the MERN stack, with a React front end, MongoDB database, and Node.js/ Express.js server and API.",
+      link: "https://github.com/kusalaindika1/my-book-search-engine",
+    },
+    {
+      title: "WEATHER-APP",
+      description:
+        "Weather-Dashboard is an application to find a weather condition of a given city both the current and 5-Days forecast at the same time. The server-side API used to get response data object is retrieved from the Open Weather API.",
+      link: "https://github.com/kusalaindika1/weather-dashboard-app",
+    },
+    {
+      title: "SOCIAL-NETWORK-API",
+      description:
+        "This is a Social-Network-Api application Build an API for a social network web application where users can share thoughts, react to friends thoughts, & create a friends list.",
+      link: "https://github.com/kusalaindika1/my-social-network-nosql-api",
+    },
+  ];
   return (
     <section className="resume__container">
       <div className="resume__myInfor">
@@ -30,11 +57,7 @@ const Resume = () => {
           features.
         </p>
 
-        <a
-          href="/pdf/LiyanagePortfolio.pdf"
-          className="resume__download"
-          download
-        >
+        <a href="/pdf/LiyanageResume.pdf" className="resume__download" download>
           Download My Resume
         </a>
       </div>
@@ -70,9 +93,33 @@ const Resume = () => {
         </p>
       </div>
 
+      <div className="resume__projects">
+        <h2>PROJECTS</h2>
+        <div className="resume__projects__block">
+          {projetDetails?.map(({ title, description, link }, index) => (
+            <ResumeProject
+              title={title}
+              description={description}
+              link={link}
+              key={index}
+            />
+          ))}
+        </div>
+      </div>
+
       <div className="resume__certifications">
-        <h2>CERTIFICATIONS</h2>
-        <h3>University of Toronto (Web Development)</h3>
+        <h2>EDUCATION</h2>
+        <h3>Certificate in Full Stack Web Development</h3>
+        <h4>University of Toronto School of Continuing Studies, Toronto, ON</h4>
+        <ul>
+          <li>
+            <p>
+              A 24-week intensive program focused on gaining technical
+              programming skills in HTML5, CSS3, JavaScript, JQuery, Bootstrap,
+              Node.js, MySQL, MongoDB, Express, and React
+            </p>
+          </li>
+        </ul>
       </div>
 
       <div className="resume__workExperience">
